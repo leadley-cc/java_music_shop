@@ -7,8 +7,11 @@ package com.example.michael.raysmusicexchange;
 public class Clarinet extends Instrument {
     private String key;
 
-    public Clarinet(String name, String material, String colour, String key) {
-        super(name, material, colour, InstrumentType.WOODWIND);
+    public Clarinet(
+            String name, String material, String colour, String key,
+            double buyPrice, double sellPrice
+    ) {
+        super(name, material, colour, InstrumentType.WOODWIND, buyPrice, sellPrice);
         this.key = key;
     }
 

@@ -7,8 +7,11 @@ package com.example.michael.raysmusicexchange;
 public class Guitar extends Instrument {
     private int numberOfStrings;
 
-    public Guitar(String name, String material, String colour, int numberOfStrings) {
-        super(name, material, colour, InstrumentType.GUITAR);
+    public Guitar(
+            String name, String material, String colour, int numberOfStrings,
+            double buyPrice, double sellPrice
+    ) {
+        super(name, material, colour, InstrumentType.GUITAR, buyPrice, sellPrice);
         this.numberOfStrings = numberOfStrings;
     }
 

@@ -5,12 +5,12 @@ package com.example.michael.raysmusicexchange;
  */
 
 public interface Saleable {
-    String getDescription();
+    String getName();
 
     double getBuyPrice();
 
     double getSellPrice();
-    void setSellPrice();
+    void setSellPrice(double sellPrice);
 
     double calculateMarkup();
 }

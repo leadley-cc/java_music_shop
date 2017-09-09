@@ -7,8 +7,11 @@ package com.example.michael.raysmusicexchange;
 public class Piano extends Instrument {
     private int numberOfKeys;
 
-    public Piano(String name, String material, String colour, int numberOfKeys) {
-        super(name, material, colour, InstrumentType.PIANO);
+    public Piano(
+            String name, String material, String colour, int numberOfKeys,
+            double buyPrice, double sellPrice
+    ) {
+        super(name, material, colour, InstrumentType.PIANO, buyPrice, sellPrice);
         this.numberOfKeys = numberOfKeys;
     }
 

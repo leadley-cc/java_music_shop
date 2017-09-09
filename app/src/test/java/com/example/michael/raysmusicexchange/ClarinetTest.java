@@ -14,7 +14,7 @@ public class ClarinetTest {
 
     @Before
     public void before() {
-        clarinet = new Clarinet("Soprano Clarinet", "African blackwood", "Black", "B♭");
+        clarinet = new Clarinet("Soprano Clarinet", "African blackwood", "Black", "B♭", 1900.0, 2300.0);
     }
 
     @Test
