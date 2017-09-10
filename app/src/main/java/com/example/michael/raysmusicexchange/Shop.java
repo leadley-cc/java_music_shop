@@ -14,4 +14,32 @@ public class Shop {
         this.name = name;
         this.stock = new ArrayList<>();
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Saleable> getStock() {
+        return stock;
+    }
+
+    public void addStock(Saleable itemToAdd) {
+        stock.add(itemToAdd);
+    }
+
+    public Saleable removeStock(int index) {
+        return stock.remove(index);
+    }
+
+    public boolean removeStock(Saleable itemToRemove) {
+        return stock.remove(itemToRemove);
+    }
+
+    public double calculateProfit() {
+        int totalProfit = 0;
+        for (Saleable item : stock) {
+            totalProfit += item.calculateMarkup();
+        }
+        return totalProfit;
+    }
 }
